@@ -1,20 +1,33 @@
-public class main
+import java.util.*;
+class area
 {
 	public static void main(String args[])
 	{
-		Area obj=new Area();
-		obj.Area( 4);
-		obj.Area(5,4);
+		demo obj = new demo();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the length & breadth of rectangle : ");
+		int ln = sc.nextInt();
+		int bd = sc.nextInt();
+		System.out.println("Enter the radius of circle : ");
+		Double rd = sc.nextDouble();
+		obj.areamethod(ln,bd);
+		obj.areamethod(rd);
+		
 	}
 }
-class Area
+class demo
 {
-	void Area(double r)
+	void areamethod(int l,int b)
 	{
-		System.out.println("Area of circle    = "+ (3.14*r*r)+"sq.units");
+		int area;
+		area =l*b;
+		System.out.println("Area of rectangle = "+area);
+		
 	}
-	void Area(double l,double b)
+	void areamethod(double r)
 	{
-		System.out.println("Area of rectangle = "+(l*b)+"sq.units");
+		double area;
+		area = 3.14*r*r;
+		System.out.println("Area of circle = "+area);
 	}
 }
