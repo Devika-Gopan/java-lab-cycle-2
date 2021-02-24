@@ -1,5 +1,5 @@
 import java.util.*;
-class area
+class javaarea
 {
 	public static void main(String args[])
 	{
